@@ -1,0 +1,102 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  border: 0%;
+}
+
+body div.Parent-container {
+  background-color: #674baf;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../images/bg-desktop.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+body div.Parent-container div.Nav-ele {
+  height: 130px;
+  padding-left: 100px;
+  padding-top: 50px;
+}
+
+body div.Parent-container div.Nav-ele div.Logo-ele img.Logo-tag {
+  width: 180px;
+}
+
+body div.Parent-container div.Main-container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "LEFT RIGHT";
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+body div.Parent-container div.Main-container div.Left-side {
+  grid-area: "LEFT";
+}
+
+body div.Parent-container div.Main-container div.Right-side {
+  grid-area: "RIGHT";
+}
+
+body div.Parent-container div.Main-container div.Left-side {
+  padding-left: 100px;
+  padding-top: 20px;
+}
+
+body div.Parent-container div.Main-container div.Left-side div.Illustration-ele img.Illustration-mock-up {
+  width: 650px;
+}
+
+body div.Parent-container div.Main-container div.Right-side {
+  padding-top: 80px;
+  padding-left: 60px;
+}
+
+body div.Parent-container div.Main-container div.Right-side div.Text-ele h1.Heading-ele {
+  font-family: "Poppins";
+  font-size: 35px;
+  color: white;
+  font-weight: 600;
+  padding-right: 150px;
+  padding-left: 50px;
+}
+
+body div.Parent-container div.Main-container div.Right-side div.Text-ele p.Paragraph-ele {
+  font-family: "Open Sans";
+  font-size: 17px;
+  color: white;
+  padding-right: 150px;
+  padding-left: 50px;
+  padding-top: 15px;
+}
+
+body div.Parent-container div.Main-container div.Right-side div.Button-ele {
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+body div.Parent-container div.Main-container div.Right-side div.Button-ele button.Btn-ele {
+  border: none;
+  border-radius: 50px;
+  padding: 12px 50px 12px 50px;
+  background: white;
+  color: #674baf;
+  font-family: "Poppins";
+  font-size: 15px;
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.225s ease-in;
+  transition: 0.225s ease-in;
+}
+
+body div.Parent-container div.Main-container div.Right-side div.Button-ele button.Btn-ele:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  background: #e882e8;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */

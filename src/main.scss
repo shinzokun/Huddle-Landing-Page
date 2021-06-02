@@ -1,0 +1,146 @@
+// Util 
+
+    // Colors 
+        // Primary
+        $violet: hsl(257, 40%, 49%);
+        $soft-magenta: hsl(300, 69%, 71%);
+        $white: hsl(0, 0%, 100%);
+
+    // Typography
+        // Headings 
+        $poppins: 'Poppins'; // 400, 600
+
+        // Body 
+        $open-sans: 'Open Sans'; // 400
+
+    // URL's
+        $back-image: url("../images/bg-desktop.svg");
+
+// Styling
+
+    // All Selector Base
+    *
+    {
+        box-sizing: border-box;
+        margin: 0%;
+        padding: 0%;
+        border: 0%;
+    }
+
+    // Primary Base
+    body
+    {
+        div.Parent-container
+        {
+            background-color: $violet;
+            height: 100vh;
+            width: 100vw;
+
+            background-image: $back-image;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            div.Nav-ele
+            {
+                height: 130px;
+
+                padding-left: 100px;
+                padding-top: 50px;
+
+                div.Logo-ele
+                {
+                    img.Logo-tag
+                    {
+                        width: 180px;
+                    }
+                }
+            }
+
+            div.Main-container
+            {
+                display: grid;
+                grid-template-areas: 
+                "LEFT RIGHT";
+
+                grid-template-columns: 50% 50%;
+
+                div.Left-side { grid-area: "LEFT"; }
+                div.Right-side  { grid-area: "RIGHT"; }
+
+                div.Left-side
+                {
+                    padding-left: 100px;
+                    padding-top: 20px;
+
+                    div.Illustration-ele
+                    {
+                        img.Illustration-mock-up
+                        {
+                            width: 650px;
+                        }
+                    }
+                }
+
+                div.Right-side
+                {
+                    padding-top: 80px;
+                    padding-left: 60px;
+                    div.Text-ele
+                    {
+
+                        h1.Heading-ele
+                        {
+                            font-family: $poppins;
+                            font-size: 35px;
+                            color: $white;
+                            font-weight: 600;
+
+                            padding-right: 150px;
+                            padding-left: 50px;
+                        }
+
+                        p.Paragraph-ele
+                        {
+                            font-family: $open-sans;
+                            font-size: 17px;
+                            color: $white;
+
+                            padding-right: 150px;
+                            padding-left: 50px;
+                            padding-top: 15px;
+                        }
+                    }
+
+                    div.Button-ele
+                    {
+                        padding-left: 50px;
+                        padding-top: 20px;
+
+                        button.Btn-ele
+                        {
+                            border: none;
+                            border-radius: 50px;
+                            padding: 12px 50px 12px 50px;
+                            background: $white;
+                            color: $violet;
+                            font-family: $poppins;
+                            font-size: 15px;
+
+                            box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.3);
+
+                            transition: 0.225s ease-in;
+
+                            &:hover
+                            {
+                                transform: scale(1.02);
+                                background: $soft-magenta;
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
